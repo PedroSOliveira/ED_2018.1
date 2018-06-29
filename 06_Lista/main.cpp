@@ -190,20 +190,21 @@ struct SList{
         head = _remove(head, value);
     }
 
-//    //metodo remover iterativo
-//    void iremove(int value){
-//        if(head == nullptr)
-//            return;
-////        if(head->value = value && head->next = nullptr){
-////            head = nullptr;
-////        }
-//        if(head->value == value && head->next != nullptr){
-//            head = head->next;
-//            delete head;
-//        }
-
-//    }
-
+  //metodo remover iterativo
+    void iremove(int value){
+        if(head == nullptr)
+            return;
+        if(head->value == value && head->next == nullptr){
+            delete head;
+            head = nullptr;
+            return;
+        }if(head->value == value && head->next != nullptr){
+            auto aux = head;
+            head = head->next;
+            delete aux;
+        }
+       
+}
 //    //metodo inserir ordenado iterativo
     void inserir_ordenado(int value){
         auto node = head;
