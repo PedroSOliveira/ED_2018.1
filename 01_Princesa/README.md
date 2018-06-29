@@ -12,5 +12,5 @@
 	* Na sintaxe da linguagem c++; no uso das listas e ainda um pouco nos vetores.
 
 * Quanto tempo levou pra fazer a atividade ?
-	* 2 semanas.
+	* 4 horas.
 
